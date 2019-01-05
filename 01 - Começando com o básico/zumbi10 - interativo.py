@@ -85,4 +85,9 @@ Help on built-in function upper:
 upper() method of builtins.str instance
     Return a copy of the string converted to uppercase.
 
->>> 
+>>> a = 42
+
+
+
+
+
