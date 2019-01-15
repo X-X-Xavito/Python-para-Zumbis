@@ -10,25 +10,26 @@ while len(lista1) < 10:
         lista1.append(n)
 lista1.sort()
 
-print(lista1[0])
-
 while len(lista2) < 10:
     n = random.randint(1,100)
     if n not in lista2:
         lista2.append(n)
 lista2.sort()
 
-
 x = 0
 y = 0
 while len(final) < 20:
     if x == 0 or x%2 == 0:
-        final.append(lista1[x])
+        final.append(lista1[y])
     else:
         final.append(lista2[y])
         y+=1
     x+=1
-    
+
+print('Lista 1: %s' %lista1)
+print('Lista 2: %s' %lista2)
+print('Lista Final: %s' %final)
+
 """
 x = 0
 while len(final) < 20:
@@ -39,6 +40,3 @@ while len(final) < 20:
     x+=1
 """
 
-
-print(lista1)
-print(lista2)

@@ -1,4 +1,18 @@
 import random
+
+lista = []
+
+while len(lista)<10:
+    n = random.randint(1,100)
+    if n not in lista:
+        lista.append(n)
+
+lista.sort()
+print(lista)
+print('Menor: %d' %lista[0])
+print('Maior: %d' %lista[len(lista)-1])
+
+
 '''
 lista = []
 maior = 0
@@ -17,15 +31,3 @@ print('Lista: %s' %lista)
 print('Maior: %d' %maior)
 print('Menor: %d '%menor)
 '''
-
-lista = []
-
-while len(lista)<10:
-    n = random.randint(1,100)
-    if n not in lista:
-        lista.append(n)
-
-lista.sort()
-print(lista)
-print('Menor: %d' %lista[0])
-print('Maior: %d' %lista[len(lista)-1])
